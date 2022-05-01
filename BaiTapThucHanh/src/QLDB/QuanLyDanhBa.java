@@ -25,9 +25,11 @@ public class QuanLyDanhBa implements QuanLy<DanhBa> {
     public int search(String name) {
         for (int i = 0; i < danhBaList.size(); i++) {
             if (danhBaList.get(i).getName().equals(name)) {
+                System.out.println(danhBaList.get(i));
                 return i;
             }
         }
+
         return -1;
     }
 
@@ -51,11 +53,13 @@ public class QuanLyDanhBa implements QuanLy<DanhBa> {
     }
 
     @Override
-    public void remove(String name) {
-        for (int i = 0; i < danhBaList.size(); i++) {
-            if (danhBaList.get(i).getName().equals(name)) {
-                danhBaList.remove(search(name));
-            }
-        }
+    public void delete(String name) {
+        int indexOfName=search(name);
+       if(indexOfName==-1){
+           System.out.println("ko tìm thấy tên");
+       }
+       else {
+           danhBaList.remove(indexOfName);
+       }
     }
 }

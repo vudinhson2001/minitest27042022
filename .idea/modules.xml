@@ -4,8 +4,11 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/19042022.iml" filepath="$PROJECT_DIR$/19042022.iml" />
       <module fileurl="file://$PROJECT_DIR$/BaiTapThucHanh/BaiTapThucHanh.iml" filepath="$PROJECT_DIR$/BaiTapThucHanh/BaiTapThucHanh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/String/CrawlSongExample.iml" filepath="$PROJECT_DIR$/String/CrawlSongExample.iml" />
       <module fileurl="file://$PROJECT_DIR$/File/File.iml" filepath="$PROJECT_DIR$/File/File.iml" />
       <module fileurl="file://$PROJECT_DIR$/Menu/Menu.iml" filepath="$PROJECT_DIR$/Menu/Menu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Staff/Staff.iml" filepath="$PROJECT_DIR$/Staff/Staff.iml" />
+      <module fileurl="file://$PROJECT_DIR$/String/String.iml" filepath="$PROJECT_DIR$/String/String.iml" />
     </modules>
   </component>
 </project>

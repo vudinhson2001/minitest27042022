@@ -30,7 +30,7 @@ public class Main {
             scanner.nextLine();
             if (choice == 2) {
                 System.out.println("nhap ten : ");
-                String nhapTen= scanner.nextLine();
+                String nhapTen = scanner.nextLine();
                 System.out.println("nhap sdt : ");
                 int nhapSo = scanner.nextInt();
                 System.out.println("nhap dia chi : ");
@@ -38,15 +38,15 @@ public class Main {
                 scanner.nextLine();
                 System.out.println("Nhap email : ");
                 String nhapEmail = scanner.nextLine();
-                DanhBa danhBa = new DanhBa(nhapTen,nhapSo,nhapDiaChi,nhapEmail);
+                DanhBa danhBa = new DanhBa(nhapTen, nhapSo, nhapDiaChi, nhapEmail);
                 quanLyDanhBa.add(danhBa);
             } else if (choice == 1) {
-            quanLyDanhBa.print();
+                quanLyDanhBa.print();
             } else if (choice == 3) {
                 System.out.println("tim sdt can cap nhap :");
                 int nhapvao = scanner1.nextInt();
                 System.out.println("nhap ten : ");
-                String nhapTen= scanner.nextLine();
+                String nhapTen = scanner.nextLine();
                 System.out.println("nhap sdt : ");
                 int nhapSo = scanner1.nextInt();
                 System.out.println("nhap dia chi : ");
@@ -54,21 +54,20 @@ public class Main {
                 scanner1.nextLine();
                 System.out.println("Nhap email : ");
                 String nhapEmail = scanner1.nextLine();
-                DanhBa danhBa1 = new DanhBa(nhapTen,nhapSo,nhapDiaChi,nhapEmail);
+                DanhBa danhBa1 = new DanhBa(nhapTen, nhapSo, nhapDiaChi, nhapEmail);
                 quanLyDanhBa.update(nhapvao, danhBa1);
             } else if (choice == 4) {
                 System.out.println("Nhap ten can xoa :");
                 String xoaTen = scanner.nextLine();
-            quanLyDanhBa.remove(xoaTen);
+                quanLyDanhBa.delete(xoaTen);
             } else if (choice == 5) {
                 System.out.println(" Tim kiem ten : ");
                 String timKiem = scanner.nextLine();
-
-            quanLyDanhBa.search(timKiem);
+                quanLyDanhBa.search(timKiem);
             } else if (choice == 6) {
-
+                FileDanhBa.readFromFile("file3.csv");
             } else if (choice == 7) {
-                FileDanhBa.writeToFile("file3.csv",quanLyDanhBa.getDanhBaList());
+                FileDanhBa.writeToFile("file3.csv", quanLyDanhBa.getDanhBaList());
             } else if (choice == 8) {
                 System.exit(0);
             }

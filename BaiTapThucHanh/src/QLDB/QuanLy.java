@@ -7,7 +7,7 @@ public interface QuanLy<T> {
 
     void update(int phone , T t);
 
-    void remove(String name);
+    void delete(String name);
 
     int search(String name);
 }
